@@ -1,0 +1,140 @@
+/* COLORE DI BASE: #0C5AA6 - http://colorschemedesigner.com/ */
+body {
+    color: #000000; 
+    text-align: left; 
+    padding:0; 
+    margin:0; 
+    height:100%; 
+    width:100%;
+    font-family: 'Duru Sans', sans-serif, 'Verdana';
+    font-size: 12px;
+    background: url('/static/images/paper_fibers.png');
+}
+#titlebar {
+    width: 100%; 
+    height: 100px; 
+    background-color: #0C5AA6;
+}
+
+#menubar {
+    width: 100%; 
+    height: 26px; 
+    background-color: #679ED2;
+    vertical-align: middle;
+    color: white;
+    font-size: 14px;
+}
+
+#menubar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#menubar li {
+    float:left; 
+    position:relative; 
+    display:block;
+    margin-top: 2px;
+    margin-right: 16px;
+}
+
+#menubar li a {
+    text-decoration: none;
+    font-weight: 400;
+}
+#menubar li ul li {
+    border-bottom: 1px solid gray;
+}
+
+#menubar li ul {
+    display:none;
+    position:absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#menubar li:hover ul{
+    display:block;
+    background:white;
+    height:auto; 
+    width: 150px;
+}
+
+#menubar li:hover ul a {
+    color: #444;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#menubar li ul li{
+    clear:both;
+    border-style:none;}
+
+
+.messagebar {
+    width: 100%; 
+    height: 18px; 
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}
+.infoMessage  {
+    background-color: green;
+    color: white;
+}
+.warningMessage {
+    background-color: yellow;
+    color: #04396C;
+}
+.errorMessage  {
+    background-color: red;
+    color: white;
+}
+#menubar a {
+    color: white;
+}
+#logo {
+    padding-top: 5px; 
+    padding-left: 10px;
+    font-size: 48px; 
+    font-weight: bold; 
+    color:#FF6700;
+}
+h1, h2, h3 {
+    color: #FF6700;
+}
+h1 {
+    font-size: 22px;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+#content {
+    margin: 10px;
+}
+a {
+    color: #FF9700;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table.paleblue, table.paleblue thead th {
+    font-size: 10px;
+}
+
+.ui-datepicker-trigger {
+    width: 26px;
+    margin-top: -12px;
+}
+
+select#id_etichette {
+    height: 250px;
+}

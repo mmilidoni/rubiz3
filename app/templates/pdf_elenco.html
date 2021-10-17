@@ -1,0 +1,49 @@
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+	body {
+		font-size: 12px;
+	}
+	.small {
+		font-size: 8px;
+	}
+	code {
+		font-size: 0.8em;
+	}
+	</style>
+    </head>
+    <body>
+    <h1>{{titolo}}</h1>
+    <code> 
+{% for e in etichette %}
+	: {{e.nome}} 
+	{% endfor %}
+</code>
+<br />
+{% for l in list %}
+<div style="display: block; height: 90px;">
+	<hr />
+	{% if l.codice1 %}
+	[{{ l.codice1 }}]
+	{% endif %}
+	
+	{{ l.cognome }} {{ l.nome }}<br/>
+	{{ l.telefono1 }} 
+	{% if l.telefono2 %}
+	- {{ l.telefono2 }}
+	{% endif %}
+
+	<br/>
+	<span class="small code">
+	{% for e in l.etichette.all %}
+		{% if e in etichette %}
+			{{ e.nome }} 
+		{% endif %}
+	{% endfor %}
+	</span>
+</div>
+{% endfor %}
+
+</body>
+</html>

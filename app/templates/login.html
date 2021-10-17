@@ -1,0 +1,15 @@
+{% extends "base/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Login" %}{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+	{% csrf_token %}
+	<table>
+		<tr><td>{% trans "Utente" %}</td><td><input type="text" name="username" value="admin" /></td></tr>
+		<tr><td>{% trans "Password" %}</td><td><input type="password" name="password" autofocus="autofocus" /></td></tr>
+	</table>
+	<button class="btn btn-primary">{% trans "Login" %}</button>
+</form>
+{%endblock %}

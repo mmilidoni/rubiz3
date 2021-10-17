@@ -1,0 +1,29 @@
+{% load i18n %}
+<ul>
+    <li>
+	<a href="javascript:void(0);">{% trans "Anagrafiche" %}</a>
+        <ul>
+			<li><a href="/elenco_persone">{% trans "Elenco" %}</a></li>
+			<li><a href="/nuova_persona">{% trans "Nuova anagrafica" %}</a></li>
+        </ul>
+    </li>
+    <li>
+	<a href="javascript:void(0);">{% trans "Etichette" %}</a>
+        <ul>
+			<li><a href="/elenco_etichette">{% trans "Elenco" %}</a></li>
+			<li><a href="/nuova_etichetta">{% trans "Nuova etichetta" %}</a></li>
+        </ul>
+    </li>
+    <li>
+	<a href="/form_stampa/elenco">{% trans "Stampa elenco" %}</a>
+    </li>
+    <li>
+	<a href="/stampa_rubrica">{% trans "Stampa rubrica" %}</a>
+    </li>
+    <li>
+	<a href="/form_stampa/etichette">{% trans "Stampa etichette" %}</a>
+    </li>
+    <li>
+	<a href="/logout">{% trans "Esci" %}</a>
+    </li>
+</ul>

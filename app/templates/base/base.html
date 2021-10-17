@@ -1,0 +1,49 @@
+{% load i18n %} 
+{% load selectable_tags %}
+{% load static %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+        <title>{% block title %}{% endblock %} - RUBIZ</title>
+        <link href='http://fonts.googleapis.com/css?family=Duru+Sans' rel='stylesheet' type='text/css' />
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+        {% include_jquery_libs %}
+        {% include_ui_theme %}
+        {{ form.media.js }}
+
+        <script type="text/javascript" src="{% static 'js/app.js'%}"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.formset.js'%}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
+
+        {% block javascript %}{% endblock %}
+    </head>
+    <body>
+        <div id="titlebar">
+			<div id="logo"><img src="{% static '/images/logo.png'%}" width="80" /> RUBIZ</div>
+			<!--
+			<div>
+				<a href="/cambia_lingua/it/">Italiano</a> 
+				<a href="/cambia_lingua/en/">English</a>
+			</div>
+			-->
+        </div>
+        <div id="menubar">
+            {% include "base/main_menu.html" %}
+        </div>
+        {% for message in messages %}
+        {% if message.tags %} 
+        <div class="messagebar {{ message.tags }}Message">
+            {% else %}
+            <div class="messagebar">
+                {% endif %}
+                {{ message }}
+            </div>
+            {% endfor %}
+            <div id="content">
+                {% block content %}{% endblock %}
+            </div>
+
+    </body>
+</html>

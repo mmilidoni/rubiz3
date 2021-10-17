@@ -1,0 +1,19 @@
+{% extends "base/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Form Etichetta" %}{% endblock %}
+
+{% block content %}
+<h1>Etichetta</h1>
+{% if form.errors %}
+    {% for error in form.non_field_errors %}
+        <div class="alert alert-error">
+            <strong>{{ error|escape }}</strong>
+        </div>
+    {% endfor %}
+{% endif %}
+<form action="/form_etichetta/{% if pk %}{{pk}}/ {% endif %}" method="post">
+    {% include "base/form_snippet.html" %}
+	<input type="submit" value="{% trans "Salva" %}" class="btn btn-primary" />
+</form>
+{% endblock %}

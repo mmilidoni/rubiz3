@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-10 23:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app/filters.py:6 app/models.py:22
+msgid "Cognome"
+msgstr ""
+
+#: app/filters.py:7 app/models.py:12 app/models.py:23
+msgid "Nome"
+msgstr ""
+
+#: app/filters.py:8
+msgid "Tel. 1"
+msgstr ""
+
+#: app/filters.py:9
+msgid "Tel. 2"
+msgstr ""
+
+#: app/filters.py:10
+msgid "Fax"
+msgstr ""
+
+#: app/models.py:13
+msgid "Tipo"
+msgstr ""
+
+#: app/models.py:18
+msgid "Etichetta"
+msgstr ""
+
+#: app/models.py:19 app/models.py:31 app/templates/base/main_menu.html:11
+msgid "Etichette"
+msgstr ""
+
+#: app/models.py:24
+msgid "Email"
+msgstr ""
+
+#: app/models.py:28
+msgid "Codice"
+msgstr ""
+
+#: app/models.py:29
+msgid "Cod.2"
+msgstr ""
+
+#: app/models.py:30
+msgid "Cod.3"
+msgstr ""
+
+#: app/models.py:34
+msgid "Persona"
+msgstr ""
+
+#: app/models.py:35
+msgid "Persone"
+msgstr ""
+
+#: app/tables.py:6
+msgid "Modifica"
+msgstr ""
+
+#: app/tables.py:6
+msgid "Elimina"
+msgstr ""
+
+#: app/tables.py:9 app/tables.py:20
+msgid "Azioni"
+msgstr ""
+
+#: app/views.py:25
+msgid "Login fallito."
+msgstr ""
+
+#: app/views.py:28
+msgid "Effettua il login."
+msgstr ""
+
+#: app/views.py:56
+msgid "Anagrafica salvata con successo."
+msgstr ""
+
+#: app/views.py:59
+msgid "Errore nel salvataggio dell'anagrafica. Impossibile salvare."
+msgstr ""
+
+#: app/views.py:62
+msgid "Errore nel salvataggio dell'anagrafica. Campi non validi."
+msgstr ""
+
+#: app/views.py:77
+msgid "Anagrafica eliminata con successo"
+msgstr ""
+
+#: app/views.py:96
+msgid "Etichetta salvata con successo."
+msgstr ""
+
+#: app/views.py:99
+msgid "Errore nel salvataggio dell'etichetta."
+msgstr ""
+
+#: app/views.py:114
+msgid "etichetta eliminata con successo"
+msgstr ""
+
+#: app/templates/elenco_etichette.html:5
+msgid "Elenco Etichette"
+msgstr ""
+
+#: app/templates/elenco_etichette.html:8
+msgid "Elenco etichette"
+msgstr ""
+
+#: app/templates/elenco_persone.html:6 app/templates/elenco_persone.html:20
+msgid "Elenco anagrafiche"
+msgstr ""
+
+#: app/templates/elenco_persone.html:22
+msgid "Filtri"
+msgstr ""
+
+#: app/templates/elenco_persone.html:37
+msgid "Applica"
+msgstr ""
+
+#: app/templates/elenco_persone.html:38
+msgid "Reset"
+msgstr ""
+
+#: app/templates/form_etichetta.html:4
+msgid "Form Etichetta"
+msgstr ""
+
+#: app/templates/form_etichetta.html:17 app/templates/form_persona.html:17
+msgid "Salva"
+msgstr ""
+
+#: app/templates/form_persona.html:4
+msgid "Form Anagrafica"
+msgstr ""
+
+#: app/templates/form_persona.html:7
+msgid "Anagrafica"
+msgstr ""
+
+#: app/templates/form_stampa.html:4
+msgid "Form Stampa"
+msgstr ""
+
+#: app/templates/form_stampa.html:7 app/templates/form_stampa.html.py:23
+msgid "Stampa"
+msgstr ""
+
+#: app/templates/form_stampa.html:17
+msgid "Titolo"
+msgstr ""
+
+#: app/templates/login.html:4 app/templates/login.html.py:13
+msgid "Login"
+msgstr ""
+
+#: app/templates/login.html:10
+msgid "Utente"
+msgstr ""
+
+#: app/templates/login.html:11
+msgid "Password"
+msgstr ""
+
+#: app/templates/base/main_menu.html:4
+msgid "Anagrafiche"
+msgstr ""
+
+#: app/templates/base/main_menu.html:6 app/templates/base/main_menu.html:13
+msgid "Elenco"
+msgstr ""
+
+#: app/templates/base/main_menu.html:7
+msgid "Nuova anagrafica"
+msgstr ""
+
+#: app/templates/base/main_menu.html:14
+msgid "Nuova etichetta"
+msgstr ""
+
+#: app/templates/base/main_menu.html:18
+msgid "Stampa elenco"
+msgstr ""
+
+#: app/templates/base/main_menu.html:21
+msgid "Stampa rubrica"
+msgstr ""
+
+#: app/templates/base/main_menu.html:24
+msgid "Stampa etichette"
+msgstr ""
+
+#: app/templates/base/main_menu.html:27
+msgid "Esci"
+msgstr ""
